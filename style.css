@@ -1,34 +1,5 @@
-/* modules */
-
 @import "css_modules/commin.css" all;
 @import "css_modules/icons_module.css" all;
-
-/* @import "mediaBreakpoint_600_720.css" screen and (max-width:720px); */
-
-
-/* :root{ 
-    --buttonColor:  #F24D4D ;
-    --primaryColor:#FB7762;
-    --secondaryColor:#133551;
-    --buttonboxshadow: 1px 6px 10px rgba(0, 0, 0, 0.3);
-} 
-
-body{
-    padding: 0;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    max-width: 1200px;
-    margin: auto;
-}
-/*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
 
 /* //////////navigation bar//////////// */
 nav{
@@ -48,27 +19,15 @@ nav{
 
 nav svg{
     height: 100%;
-    /* text-align: right; */
     width: auto;
-    /* margin: 0; */
-    /* margin: auto; */
-    /* background-color: blanchedalmond; */
 }
 
 .navlinkscontainer{
-    /* display: flex; */
-    /* max-width: 600px; */
-    /* width: fit-content; */
-    /* padding: 0 0 0 6px; */
-    /* float: right; */
     padding: 0 10px;
 }
 
 .navlinks{
-    /* display: flex; */
     width: 100%;
-    /* max-width: 600px; */
-    /* justify-content: space-between; */
 }
 
 .navlinks a{
@@ -96,7 +55,6 @@ nav svg{
 header section{
     background-color: #133551;
     padding: 30px;
-    /* max-height: 60vh; */
     width: 50%;
     text-align: center;
 }
@@ -121,27 +79,18 @@ header section img{
 
 .subjecrtCards{
     padding: 30px 0;
-    /* background: linear-gradient(#FDB74C , var(--buttonColor)); */
     display: flex;
     justify-content: space-around;
     overflow:auto;
     scroll-behavior: smooth;
-    /* position: relative; */
-    /* scroll-snap-type:Y mandatory; */
     border-bottom: 10px solid rgba(0, 0, 0, 0.04);
 }
 
 .subjecrtCards .card{
-    /* min-width: 150px;change this to control card size */
     height: fit-content;
-    /* background-color:blue ; */
-    /* border-radius: 10px; */
-    /* display: flex; */
-    /* flex-direction: column; */
     text-align: center;
     margin:0;
     padding: 0px 0px;
-    /* border: 1px solid; */
 }
 
 .subjecrtCards .card a{
@@ -160,26 +109,9 @@ header section img{
     line-height: 110px;
     margin: 10px;
     border-radius: 36%;
-    /* font-weight:600; */
 }
 
 
-
-
-/* 
-.dotted_scrollbar{
-    background: chartreuse;
-    padding: 10px;
-}
-
-.dotted_scrollbar span a{
-    width: 10px;
-    position:a;
-    border-radius: 50%;
-    color: white;
-    height: 10px;
-    background: white;
-} */
 
 /* ///////// offersSections /////////// */
 /* type1 */
@@ -288,8 +220,6 @@ footer{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* margin: 10px 0; */
-    /* background-color: blanchedalmond; */
 }
 
 footer a{
@@ -303,7 +233,6 @@ footer .listsOf h4{
 
 footer .main{
     max-width: 300px;
-    /* max-width: 50%; */
     padding: 30px;
     margin: auto;
     
@@ -316,25 +245,16 @@ footer .main div{
 footer .main svg{
     width: 100%;
     height: fit-content;
-    /* margin: 10px 0; */
  }
 
 
 
 .social_icnLinks a{ 
-     /* color: black;
-     width: 90%; */
      font-size: 1.5rem;
-     /* padding: 0  ; */
      line-height: 2rem;
-     /* width: 1.6rem; */
-     /* margin: auto; */
-     /* background-color: burlywood; */
  }
 
  .social_icnLinks a:hover{
-     
-     /* padding: 0 .3rem; */
      color: white;
      border-radius: 4px;
      font-size: 1.6rem;
@@ -365,15 +285,8 @@ footer .main svg{
  }
 
 
-
- .social_icnLinks a svg{
-     /* height: ; */
-    /* box-shadow: var(--buttonboxshadow); */
- }
-
 footer .listsOf{
     display: flex;
-    /* width:fit-content; */
     margin: auto;
 }
 
@@ -388,10 +301,8 @@ footer .listsOf ul li{
 
 
 footer .company , .goals , .links {
-    /* width: 33.333%; */
     padding: 10px;
     margin: 10px;
-    /* border: 1px solid; */
 }
 
 
@@ -409,7 +320,6 @@ footer .company , .goals , .links {
     
     nav{
         font-size: initial;
-        /* font-size: x-small; */
      }
      
      nav svg{
@@ -450,18 +360,7 @@ footer .company , .goals , .links {
          margin: 5px auto;
          padding: 10px 20px;
          border-radius: 10px;
-     }
- 
-     
- .navlinks i{
-     display: initial;
-     /* background-color: blue; */
-     padding: 0 30px 0 0;
- }
-     
-     .navlinkscontainer a{
-        
-     }
+     } 
  
      .navlinks a:hover{
          background-color: rgba(255, 255, 255, 0.1);
@@ -490,13 +389,7 @@ footer .company , .goals , .links {
          position: absolute;
          right: 0px;
          top: 0px;
-         /* background-color: rgba(255, 255, 255, 0.449); */
-         /* line-height: 100%; */
          padding: 9px 11px;
-         /* height: 30px; */
-         /* width: 30px; */
-         /* border-radius: 50%; */
-         /* text-align: center; */
          font-weight:bolder;
          cursor: pointer;
          z-index: 200;
@@ -505,17 +398,6 @@ footer .company , .goals , .links {
      #burgermenu_cross{
          color: white;
      }
- 
- 
-
-
-
-    
-    /* nav svg{
-        margin: auto;
-        width: auto;
-        z-index: 300;
-    } */
 
 
 
@@ -548,67 +430,70 @@ header section img{
 /* ///////// offersSections /////////// */
             /* type1 */
 
-            .offersSections{
-       
-            }
-        
+         
             .offersSections h1{
-               /* margin: 10px; */
                 font-size: 30px;
                 font-weight:bolder;
             }
         
             .offersSections p{
-                /* min-height: unset; */
-                /* margin: 10px 0; */
                 font-size: small;
             }
         
-            .container_offers{
-                /* position: unset; */
-                /* height: fit-content; */
-                /* padding: 10px; */
+        
+            .container_offers .button a{
+                border: 2px solid var(--buttonColor);
+                padding:10px 15px ;
+                border-radius: 10px;
+                font-size: medium;
+             }
+
+
+
+
+             .container_offers{
+                position: unset;
+                height: fit-content;
+                padding: 10px;
             }
         
             .innercontainer_offers{
-                /* width: 100%; */
+                width: 100%;
                 }
         
             .vector{
-                /* text-align: center; */
+                text-align: center;
                }
             .vector img{
-                /* max-width: 70%; */
-                /* position: initial; */
+                max-width: 60%;
+                position: initial;
                 }
         
             .container_offers .button{
-            /* height: 30px; */
-            /* width: 100%; */
-            /* margin: 10px; */
-            /* position: unset; */
-            /* text-align: center; */
+                width: 100%;
+                margin: 10px;
+                position: unset;
+                text-align: center;
             }
         
             .container_offers .button a{
-                /* margin: auto; */
-                border: 2px solid var(--buttonColor);
-                /* line-height: 0px; */
-                padding:10px 15px ;
+                margin: auto;
+                padding:6px 15px ;
                 border-radius: 10px;
-                /* background-color: var(--buttonColor); */
-                /* color: white; */
-                /* text-align: center; */
-                /* text-decoration: none; */
-                /* text-transform: capitalize; */
-                font-size: medium;
-                /* position: unset; */
-                /* top: 0; */
-                /* left: 0; */
+                position: unset;
              }
+
+
         
             /* type 2 */
         
+
+            
+           
+            .offersSections > div:nth-child(2n) > div{
+                float: initial;
+            }
+
 
 
 
@@ -625,96 +510,37 @@ header section img{
         padding: 10px;
     }
 
-        
-    /* footer{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin: 10px 0;
-    } */
-/* 
-    footer a{
-        color: rgba(0, 0, 0, 0.5);
-        text-decoration: none;
-    } */
-/* 
-    footer h4{
-        margin:auto;
-    } */
-
     footer .main , .apps{
         width: 100%;
         padding: 0px;
-        /* margin: auto; */
     }
 
     footer .main{
         display: flex;
         width: 100%;
         height: 60px;
-        /* justify-content: space-between; */
     }
     footer .main svg{
         width:35%;
         height: 60px;
-        /* height: fit-content; */
-        /* margin: 10px 0; */
     }
 
     .social_icnLinks{
         width: 30%;
-        /* display: grid; */
-    }
-
-    .social_icnLinks a{ 
-        /* color: black; */
-        /* background-color: khaki; */
-        /* line-height: 90px; */
-        /* font-size:150px; */
-        /* text-align: center; */
-        /* padding: 1px; */
-        /* margin: 0; */
-        /* width: 100%; */
-    }
-
-    .social_icnLinks a svg{
-        /* width: 100%; */
-        /* height: 100%; */
-        /* background-color: khaki; */
     }
 
     .copyright{
         height: 60px;
-        /* background-color: khaki; */
-        /* line-height: 30px; */
         padding: 10px;
     }
-/*  */
-    /* footer .listsOf{
-        display: flex;
-    }
 
-    footer .listsOf ul{
-        list-style: none;
-        padding: 0px;
-    }
-
-
-    footer .company , .goals , .links {
-        width: 33.333%;
-        padding: 10px;
-    } */
 
     footer .apps div{
         display: flex;
     }
     footer .apps svg{
         width: 90%;
-        /* background: black; */
-        /* padding: ; */
         margin: 5%;
-        /* height: fit-content; */
-        /* border-radius: 9px; */
     }
 
 
@@ -732,10 +558,8 @@ header section img{
 
     footer .main{
         display: initial;
-        /* background-color: rgb(240, 235, 192); */
         width: initial;
         height: 100%;
-        /* justify-content: space-between; */
     }
     footer .main svg{
         width:initial;
@@ -745,7 +569,6 @@ header section img{
 
     .social_icnLinks{
         width: initial;
-        /* display: grid; */
     }
 
 
@@ -769,6 +592,16 @@ header section img{
 }
 
 
+
+@media (max-width:600px){
+    .vector img{
+        max-width: 80%;
+    }
+}
+
+
+
+
 @media (max-width:480px){
 
 
@@ -783,69 +616,10 @@ header section img{
         /* ///////// offersSections /////////// */
             /* type1 */
 
-            .offersSections{
-       
-            }
-        
-            .offersSections h1{
-               /* margin: 10px; */
-            }
-        
-            .offersSections p{
-                /* min-height: unset; */
-                /* margin: 10px 0; */
-
-            }
-        
-            .container_offers{
-                position: unset;
-                height: fit-content;
-                padding: 10px;
-            }
-        
-            .innercontainer_offers{
-                width: 100%;
-                }
-        
-            .vector{
-                text-align: center;
-               }
-            .vector img{
-                max-width: 70%;
-                position: initial;/**/
-                }
-        
-            .container_offers .button{
-                /* height: 30px; */
-                width: 100%;
-                margin: 10px;
-                position: unset;
-                text-align: center;
-            }
-        
-            .container_offers .button a{
-                margin: auto;
-                /* border: 2px solid var(--buttonColor); */
-                /* line-height: 0px; */
-                padding:6px 15px ;
-                border-radius: 10px;
-                /* background-color: var(--buttonColor); */
-                /* color: white; */
-                /* text-align: center; */
-                /* text-decoration: none; */
-                /* text-transform: capitalize; */
-                /* font-size: ; */
-                position: unset;
-                /* top: 0; */
-                /* left: 0; */
-             }
+          
         
             /* type 2 */
         
-           
-            .offersSections > div:nth-child(2n) > div{
-                float: initial;
-            }
 
 
 
