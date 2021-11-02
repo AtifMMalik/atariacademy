@@ -1,0 +1,317 @@
+ 
+@import "css_modules/commin.css" all;
+@import "css_modules/icons_module.css" all;
+
+
+
+header{
+    background-color: blanchedalmond;
+    background-image: url("/atariacademy/pictures/atari/subject page header background.jpg");
+    background-position:bottom right;
+    /* background-size: ; */
+    background-size:100%;
+}
+
+header .h_body h1{
+    color: var(--primaryColor);
+}
+
+header .h_body h6{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+nav{
+    /* background-color: wheat; */
+    height: 40px;
+    /* line-height: 40px; */
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: lawngreen; */
+}
+
+nav div{
+    display: inline-block;
+}
+
+nav .logo__ svg{
+    height: 40px;
+    /* background-color: violet; */
+    width: fit-content;
+    padding: 0 100px 0 0 ;
+}
+
+
+nav .search_YTlink{
+    display: flex;
+}
+
+
+nav .search_YTlink .YTlink a::before{
+   color: #ff0000;
+}
+
+nav .search_YTlink .YTlink a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    /* line-height: 40px; */
+    /* background-color: wheat; */
+    padding: 7px;
+    border-radius:30px ;
+    
+}
+
+nav .search_YTlink .YTlink a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.search{
+    padding: 5px;
+    /* background-color: blanchedalmond; */
+}
+
+.search input{
+    display: grid;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0 10px;
+    height: 30px;
+    /* line-height: 40px; */
+    width: 100%;
+}
+
+.search input:focus {
+    /* border: none; */
+    outline: none;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+
+#search_opBtn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.h_body{
+    /* background-color: blanchedalmond; */
+    padding: 30px 0 40px 20px;
+}
+
+
+
+
+
+
+/* main */
+
+.visit_link{
+    height: 40px;
+    background-color: var(--buttonColor);
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+    line-height: 40px;
+}
+
+.visit_link a{
+    line-height: 40px;
+    /* background-color: coral; */
+    color: white;
+    text-decoration: none;
+}
+
+.visit_link a span{
+    float: right;
+    line-height: 40px;
+    /* color: rgba(255, 255, 255, 0.9); */
+}
+
+
+details{
+    /* background-color: blanchedalmond; */
+    margin: 10px;
+    /* padding: 10px; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    /* display: ; */ 
+    cursor: pointer;
+    user-select: none;
+}
+
+
+summary::marker, summary::-webkit-details-marker {
+    /* list-style-type: none; */
+    /* background:burlywood; */
+    /* content: "a"; */
+    /* color: transparent; */
+    /* background:url('/atariacademy/public_html/angle-right.svg'); */
+    /* display: none; */
+}
+
+
+summary{
+    display: flex;
+    background-color: var(--secondaryColor);
+    padding: 0 15px;
+    color: white;
+    font-size: large;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+details summary .fas{
+    /* padding: 15px 0; */
+    /* font-size: 1.8rem; */
+    line-height: 60px;
+    /* background: #ff0000; */
+    /* float: right; */
+    transition: transform .4s ease-in-out;
+}
+
+details[open] > summary > .fas{
+    transform: rotate(180deg);
+}
+
+
+details[open] summary ~ *{
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep{
+    from{
+        margin-top: -10px;
+    }
+    ot{
+        margin-top: 0px;
+    }
+}
+
+details a{
+    padding: 10px;
+    line-height: 30px;
+    color: black;
+    text-decoration: none;
+    /* display: list-item; */
+}
+
+
+details a:hover{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.YT_video_lnk{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.YT_video_lnk a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.YT_video_lnk a img{
+    width: 100%;
+    height: fit-content;
+    /* max-width: 400px; */
+    /* display: inline-block; */
+}
+
+details .main{
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+    body{
+        /* background-color: blanchedalmond; */
+    }
+
+
+    .YTlink span{
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media (max-width:600px){
+    body{
+        /* background-color: blanchedalmond; */
+    }
+
+    .YTlink a{
+        /* background-color: khaki; */
+        line-height: 23px;
+    }
+
+    .YTlink a::before{
+        font-size:small;
+    }
+    .YTlink span{
+        display: initial;
+        font-size: small;
+    }
+
+
+    .search input{
+        /* background-color: blanchedalmond; */
+        display: none;
+    }
+
+    #search_opBtn{
+        display: initial;
+        /* height: 40px; */
+        padding: 10px;
+        line-height: 30px;
+        border-radius: 50%;
+        /* background-color:rgb(146, 146, 146); */
+    }
+
+    #search_opBtn:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+@media (max-width:450px){
+    body{
+        /* background-color: blanchedalmond; */
+    }
+
+    .YTlink span{
+        display: none;
+    }
+
+    nav .logo__ svg{
+        padding: 0;
+    }
+}

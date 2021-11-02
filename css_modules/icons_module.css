@@ -1,0 +1,60 @@
+:root{
+  /* --icon_margin:10px; */
+  /* --icon_L_margin:10px; */
+  /* --icon_R_margin:auto 10px auto auto; */
+  /* --icon_LR_margin:10px; */
+  /* --icon_T_margin:10px; */
+  /* --icon_B_margin:10px; */
+  /* --icon_TB_margin:10px; */
+}
+
+
+
+.icon::before , .icon::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+/* nav bar */
+nav .fas::before{
+  display: none;
+}
+@media (max-width:767px){
+  nav .fas::before{
+    margin: auto 10px auto auto;
+    display: initial;
+  }
+}
+
+
+
+
+
+
+
+.subjecrtCards > span:first-child::after {
+    content: "\f137";
+  }
+
+  .subjecrtCards > span:last-child::after{
+    content: "\f138";
+  }
+
+
+
+
+
+
+
+  /* footer */

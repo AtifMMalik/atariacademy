@@ -1,0 +1,50 @@
+@import url("/atariacademy/public_html/css_modules/commin.css");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+body main{
+    background: url(/atariacademy/pictures/insta_tamplates/feed_post_square.svg) ;
+    background-size: contain;
+    height: 600px;
+    width: 600px;
+    position: relative;
+    /* display: grid; */
+    /* place-items: center; */
+}
+
+
+.subject{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    /* background:black; */
+    width: fit-content;
+    /* float: right; */
+    /* display: ; */
+    position: absolute;
+    right: 10px;
+
+    padding: 10px;
+    margin: 0 30px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+.content{
+    background: seashell;
+    height: 100px;
+    width: 100px;
+    position:relative;
+    margin: auto;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* transform: translateY(-50%); */
+}
