@@ -1,50 +1,156 @@
-@import url("/atariacademy/public_html/css_modules/commin.css");
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap');
+@import "/atariacademy/css_modules/commin.css" all;
+@import "/atariacademy/css_modules/icons_module.css" all;
 
-body{
-    height: 100vh;
-    width: 100vw;
+.headersection_L h1{
+    font-size: 40px;
+    color:  #FDB74C;
+    text-align: center;
+    padding: 10px; 
+    height: 30%;
+    line-height: 30px;
+}
+.headersection_L{
     display: grid;
-    place-items: center;
+    align-items: center;
 }
-
-body main{
-    background: url(/atariacademy/pictures/insta_tamplates/feed_post_square.svg) ;
-    background-size: contain;
-    height: 600px;
-    width: 600px;
+header section{
+    text-align: initial;
+}
+/* /////////card///////////////// */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin:10px;
+}
+main a{
+    text-decoration:none;
+}
+.card_container{
+    /* border:1px solid; */
+    padding: 30px 0 0 0;
+    width: 90%;
+    /* height:200px; */
+    margin: 10px auto;
+}
+.innercardcontainer{
+    border-radius: 10px ;
+    border:1px solid #F24D4D;
     position: relative;
-    /* display: grid; */
-    /* place-items: center; */
+    padding: 30px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
 }
-
-
-.subject{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.1rem;
-    color: white;
-    /* background:black; */
-    width: fit-content;
-    /* float: right; */
-    /* display: ; */
+.icon_circle{
+    /* border: 1px solid #F24D4D; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    right: 10px;
-
-    padding: 10px;
-    margin: 0 30px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* padding:5px; */
+    background-color: white;
+    display:grid;
+    align-items:center;
+    /* border: 1px solid; */
+}
+.inner_circle{
+    background-color: #F24D4D;
+    overflow:hidden;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    line-height: 60px;
+    display:grid;
+    align-items:center;
+}
+.inner_circle span{
+    color:white;
+    font-size: 1.6rem;
+    /* border:1px solid black; */
+}
+.innercardcontainer h3{
+    color: #F24D4D;
+    font-size: 1.4rem;
+    /* border: 1px solid; */
+    line-height: 3rem;
+} 
+.innercardcontainer h4{
+    color: rgba(251, 118, 98, 0.9);
+    font-size: 1.1rem;
+    /* border: 1px solid; */
+    line-height: 1.3rem;
+    margin-bottom:10px ;
+}
+.innercardcontainer p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.6rem;
+    /* border: 1px solid; */
+}
+/* ////////////footer/////////// */
+footer{
+    background:var(--secondaryColor);
+}
+footer .copyright{
+    color: var(--primaryColor);
+}
+footer .fab , footer{
+    color: white;
+}
+.listsOf ul li a{
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-top: 10px;
+}
+.listsOf ul li a:hover{
+    color: white;
 }
 
 
-.content{
-    background: seashell;
-    height: 100px;
-    width: 100px;
-    position:relative;
-    margin: auto;
-    top: 50%;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
-    /* transform: translateY(-50%); */
+/* ////////////media///////// */
+@media (max-width:790px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:767px){
+    /* /////////////////////header////////////////////// */
+    .headersectioncontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .headersection_L h1{
+        position:absolute;
+        top:10px;
+        left: 50%;
+        transform: translate(-50%);
+        height: 50px;
+        /* border:1px solid; */
+        width:100%;
+    }
+    header{
+        position: relative;
+    }
+    header section{
+        width: 100%;
+        /* padding-top: 60px; */
+    }
+    header section img{
+        display: initial;
+        /* border: 1px solid; */
+        width:100%;
+        transform: translateY(45px);
+    }
+
+    /* ////////main/////// */
+   
+}
+@media (max-width:550px){
+    main{
+        grid-template-columns: 1fr;
+    }
 }
