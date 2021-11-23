@@ -1,11 +1,11 @@
-@import "/css_modules/commin.css" all;
-@import "/css_modules/icons_module.css" all;
+@import "/atariacademy/css_modules/commin.css" all;
+@import "/atariacademy/css_modules/icons_module.css" all;
 
 
 
 header{
     background-color: blanchedalmond;
-    background-image: url("/resources/pictures/atari/des_graphics/created/subject\ page\ header\ background.jpg");
+    background-image: url("/atariacademy/resources/pictures/atari/des_graphics/created/subject\ page\ header\ background.jpg");
     background-position:bottom right;
     background-size:100%;
 }
