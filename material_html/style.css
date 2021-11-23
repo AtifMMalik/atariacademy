@@ -1,0 +1,51 @@
+@import "/test_html/style.css" all;
+
+.edu_banner_header , .headersection_L{
+    background-color: white;
+    /* color: black; */
+}
+
+.headersection_L p{
+    color: black;
+}
+.headersection_L h1{
+    color: tomato;
+}
+/* ////////card///////////// */
+main{
+    padding:10px;
+    margin: 0;
+    background-color: var(--secondaryColor);
+}
+.innercardcontainer{
+    border:1px solid white;
+    box-shadow: rgba(182, 182, 182, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    
+}
+.icon_circle{
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.innercardcontainer h3{
+    color: white;
+} 
+.innercardcontainer h4{
+    color: rgba(255, 255, 255, 0.9);
+}
+.innercardcontainer p{
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ////////////footer/////////// */
+footer{
+    background:white;
+}
+footer .copyright{
+    color: var(--secondaryColor);
+}
+footer .fab , footer{
+    color: var(--secondaryColor);
+}
+.listsOf ul li a{
+    color: rgba(0, 0, 0, 0.6);
+}
+.listsOf ul li a:hover{
+    color: black;
+}
