@@ -6,6 +6,7 @@ const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
+// //////////////////////////////////////////////////////////////////////////////////////////////
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
@@ -21,11 +22,11 @@ start_btn.onclick = ()=>{
 exit_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
 }
-
 // if continueQuiz button clicked
 continue_btn.onclick = ()=>{
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
+    // /////////////////////////////////////////////////////////////////////////////////////
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(time_per_question); //calling startTimer function
@@ -91,6 +92,7 @@ next_btn.onclick = ()=>{
 }
 
 // getting questions and options from array
+//////////////////////////////////////////////////////////////////////////////////////////////////
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
 

@@ -1,3 +1,8 @@
+<?php
+$conn = mysqli_connect("localhost","root","","atari") or die("connection failed");
+$sql = "SELECT * FROM `testseriescards` WHERE Pkey = '1'";
+$data=mysqli_query($conn,$sql) or die("query unsuccessful");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +36,9 @@
     <!-- Quiz Box -->
     <div class="quiz_box">
         <header>
+            <?php
+                $cardData= mysqli_fetch_assoc($data);
+            ?>
             <div class="title">Gravitation</div>
             <div class="timer">
                 <div class="time_left_txt">Time Left</div>
@@ -52,7 +60,7 @@
             <div class="total_que">
                 <!-- Here I've inserted Question Count Number from JavaScript -->
             </div>
-            <button class="next_btn">Next</button>
+            <button class="next_btn">Next Que</button>
         </footer>
     </div>
 
@@ -72,28 +80,18 @@
     </div>
 
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <!-- <script src="js/questions.js"></script> -->
+    <script src="js/questions.js"></script>
 
     <script>
-      
-    fetch('questions.json')
-        .then((res) => {
-            return res.json();
-        })
-        .then((loadedQuestions) => {
-            questions = loadedQuestions;
-            startGame();
-        })
-        .catch((err) => {
-            console.error(err);
-    });
-
-    console.log(...questions);
+        /*data fatching from json file*/
+        // fetch("/atariacademy/test_html/test_type1/js/questions.json")
+        // .then(response => response.json())
+        // .then(json => console.log(json))
+        // .catch(error => console.log("server down"));
     </script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script.js"></script>
-    <!-- <script src="js/script1.js"></script> -->
 
 </body>
 </html>

@@ -1,13 +1,18 @@
+<?php
+$conn = mysqli_connect("localhost","root","","atari") or die("connection failed");
+$sql = "SELECT * FROM testseriescards";
+$data=mysqli_query($conn,$sql) or die("query unsuccessful");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="\atariacademy\fontawesome-free-5.15.4-web\css\all.min.css">
+    <link rel="stylesheet" href="\atariacademy\style.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="\atariacademy\favicon.svg" type="image/svg">
     <title>test series</title>
 </head>
 <body>
@@ -58,7 +63,7 @@
             
             
             <section style="text-align: center;" class="edu_banner_header">
-                <img src="/resources/pictures/atari/des_graphics/svg/test section.svg" alt="">
+                <img src="\atariacademy\resources\pictures\atari\des_graphics\svg\test section.svg" alt="">
             </section>
 
             
@@ -100,178 +105,50 @@
 
    </header>
    <main>
-       <!-- need to add php loop from here -->
-         <a href="nodestination.html">
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-sun"></span>
-                        </div>
-                    </div>
-                    <h3>Physics</h3>
-                    <h4>Light reflection and refraction</h4>
-                    <p>
-                        <span>10th CBSC based <br> 30 Questions </span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="test_type1/index.html">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-apple-alt"></span>
-                        </div>
-                    </div>
-                    <h3>Physics</h3>
-                    <h4>Gravitation</h4>
-                    <p>
-                        <span>10th CBSC based <br> 30 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-bolt"></span>
-                        </div>
-                    </div>
-                    <h3>Physics</h3>
-                    <h4>Current Electricity</h4>
-                    <p>
-                        <span>10th CBSC based <br> 30 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-assistive-listening-systems"></span>
-                        </div>
-                    </div>
-                    <h3>Physics</h3>
-                    <h4>Sound</h4>
-                    <p>
-                        <span>10th CBSC based <br> 30 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas">
-                                <b>θ</b>
-                            </span>
-                        </div>
-                    </div>
-                    <h3>Maths</h3>
-                    <h4>Trigonometry</h4>
-                    <p>
-                        <span>10th CBSC based <br> 30 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-grip-horizontal"></span>
-                        </div>
-                    </div>
-                    <h3>chemistry</h3>
-                    <h4>Periodic table</h4>
-                    <p>
-                        <span>Class 9th based <br> 50 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas fa-flask"></span>
-                        </div>
-                    </div>
-                    <h3>Chemistry</h3>
-                    <h4>Organic chemistry</h4>
-                    <p>
-                        <span>Class 12th based <br> 100 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
-         
-        <a href="">
-            
-            <div class="card_container">
-                <div class="innercardcontainer">
-                    <div class="icon_circle">
-                        <div class="inner_circle">
-                            <span class="fas"><b>⨍</b></span>
-                        </div>
-                    </div>
-                    <h3>Maths</h3>
-                    <h4>Differentiation</h4>
-                    <p>
-                        <span>+2 based <br> 30 Questions</span>
-                    </p>
-                </div>
-            </div>
-        
-        </a>
+<?php 
+if(mysqli_num_rows($data) > 0){
 
-        <a href="">
-            
+    while($cardData= mysqli_fetch_assoc($data)){
+?>
+        <a href="test_type1/index.html?<?php echo $cardData['Pkey'];?>">
             <div class="card_container">
                 <div class="innercardcontainer">
                     <div class="icon_circle">
                         <div class="inner_circle">
-                            <span class="fas"><b>⎰x</b></span>
+                            <?php
+                                if($cardData['icon']!=null)
+                                {
+                            ?>
+                                <span class="fas <?php echo $cardData['icon']; ?>"></span>
+                            <?php
+                                }
+                                else{
+                            ?>
+                                <span class="fas"><?php echo $cardData['iconAlternative']; ?></span>
+                            <?php
+                                }
+                            ?>
                         </div>
+                        <!-- <i class="fas "></i> -->
                     </div>
-                    <h3>Maths</h3>
-                    <h4>Integration</h4>
+                    <h3><?php echo $cardData['subject']; ?></h3>
+                    <h4><?php echo $cardData['topic'] ?></h4>
                     <p>
-                        <span>+2 based <br> 30 Questions</span>
+                        <span><?php echo $cardData['description'] ?></span>
                     </p>
                 </div>
             </div>
+        
         </a>
-               <!-- need to end php loop here -->
+<?php
+    }
+?>
+
+<?php 
+}else{
+    echo "no records found";
+}
+?>
    </main>
 
   
@@ -344,7 +221,7 @@
     </div>
 
 </footer>
-<script type="text/javascript" src="/script.js">
+<script type="text/javascript" src="\atariacademy\script.js">
    
 </script>
 </body>
