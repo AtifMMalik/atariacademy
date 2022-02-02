@@ -71,29 +71,7 @@
         </div>
     </div>
 
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <!-- <script src="js/questions.js"></script> -->
-
-    <script>
-      
-    fetch('questions.json')
-        .then((res) => {
-            return res.json();
-        })
-        .then((loadedQuestions) => {
-            questions = loadedQuestions;
-            startGame();
-        })
-        .catch((err) => {
-            console.error(err);
-    });
-
-    console.log(...questions);
-    </script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script.js"></script>
-    <!-- <script src="js/script1.js"></script> -->
 
 </body>
 </html>
